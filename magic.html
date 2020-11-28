@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-----------Fonts----------------------------->	
+	<link href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Quicksand:200,400" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Goldman&&effect=emboss|3Dfloat" rel="stylesheet">
+<!---------------------Favicon------------------>
+	<link rel="icon" href="magiclogo.png" size="16x16" type="image/x-icon">
+	<link rel="stylesheet" href="magicstyle.css">
+
+<title>
+	
+</title>
+<!---------------Icons------------------------>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<!-----------------Styling----------------------------->
+	<style type="text/css">
+
+	</style>
+</head>
+<body>
+	
+
+<!-----------------Exit gate------------------------>
+<button id="exitButton" style="display:none;" onclick="outToMain()"><i class="fas fa-dungeon"></i>
+</button><span id="username2">Magix Fortune</span>
+<!------------------------First Section------------------->
+<div align="center" style="width:100%">	
+	<i id="backlogo" class="fab fa-grav"></i>
+	<div align="center" class="backball" style="display:;">
+		<div class="logoball" align="center">
+			<i id="rock" class="fab fa-galactic-senate"></i>
+		</div>
+		<h3>
+			MAGIX FORTUNE
+		</h3>
+		<span>
+			World of Solution to Every Problem
+		</span>
+		<p class="usericon" >
+			<!-- <i class="fas fa-id-badge"></i> -->
+			<input type="text" placeholder="Tell your name" onfocus="this.placeholder=''" onblur="this.placeholder='name here!'" id="nameball" onclick="noname()">
+		</p>
+		<p>
+			<button id="nameButton" onclick="enterOne()">
+				Let's Go! <i class="fas fa-dungeon"></i>
+			</button>
+		</p>
+	</div>
+<!------------------------second Section------------------->
+	<div align="center" id="branding" style="display:none;">
+		<div class="logoball2" align="center">
+			<i class="fab fa-galactic-senate"></i>
+		</div>
+		<h3>
+			MAGIX FORTUNE
+		</h3>
+		<span>
+			World of Solution to Every Problem
+		</span>
+	</div>
+	<div align="center" class="backball2" style="display:none;">
+		<p class="wel">
+			<span>Welcome</span> 
+			<div id="uname">X</div> 
+			<span class='qna'> Are you ready to ask your questions?</span>
+		</p>
+					<button id="qButton" onclick="enterques()">
+				Yes! Ready <i class="fas fa-dice-d20"></i>
+			</button>
+						<button id="qButton" onclick="enterhold()">
+				Not Ready! <i class="fas fa-torii-gate"></i>
+			</button>
+	</div>
+<!-----------------Question area----------------------->
+	<div id="quesbox" style="display:none;padding:25px;margin-top:25px;">
+		<p class="usericon2">
+			<i class="fas fa-question-circle"></i>
+			<input type="text" placeholder="Ask your question?" onfocus="this.placeholder=''" onblur="this.placeholder='Be Brave! Question?'" id="qbox" onclick="quesblank()">
+		</p>
+		<p>
+			<button id="aButton" onclick="askOne()">
+				Ask Now <i class="fas fa-microphone-alt"></i>
+			</button>
+			<button id="allques" onclick="allQues()">
+				<i class="fas fa-caret-square-down"></i>
+			</button>
+		</p>
+	</div>
+<!-----------------Set of questions---------------->
+<div id="allquesbtn" style="display:none;">
+<p><button onclick="ques1()">Who is my greater strength?</button></p>
+<p><button onclick="ques1()">Will I be able to earn fortune in future?</button></p>
+<p><button onclick="ques1()">Will i be able to go out for adventure in future?</button></p>
+<p><button onclick="ques1()">I love someone but is this the right time to confess?</button></p>
+<p><button onclick="ques1()">Which animal do I keep as a pet?</button></p>
+<p><button onclick="ques1()">Who is my best friend?</button></p>
+<p><button onclick="ques1()">Is there any scope of my career?</button></p>
+<p><button onclick="ques1()">I am feeling weak. What should I do?</button></p>
+<p><button onclick="ques1()">Is there any way to reduce my pressure?</button></p>
+<p><button onclick="ques1()">My friend is not trust worthy. What shoul I do?</button></p>
+</div>
+
+
+<!-------------------Loading----------------------->
+<div id="loadingarea" style="display:none;">
+		<span id="loadhead" >Ready to go!</span>
+<!----------------Loading icon---------------------->
+			<div id="loading">loading...<i class="fas fa-space-shuttle"></i></div>
+			<p><button id="loadbtn" onclick="load()">
+				Proceed
+			</button></p>
+
+</div>
+<!--------------------Answer area-------------------->
+		<p><div id="ansarea" style="display:none;">
+			<div id="ansbox" onclick="ansclick()">
+				Your answer will display here...Your answer will display here...Your answer will display here...Your answer will display here...Your answer will display here...Your answer will display here...
+			</div>
+			<button id="nButton" onclick="nextQues()">
+				Next Question <i class="fas fa-microphone-alt"></i>
+			</button>
+		</div>
+		</p>
+<!----------------------Request area--------------------->
+		<p><div id="reqarea" style="display:none;">
+			<div id="reqbox" onclick="reqclick()">
+				Try once and trust us...
+			</div>
+			<button id="nButton" onclick="tryQues()">
+				Let's Try Once <i class="fas fa-drum"></i>
+			</button>
+		</div>
+		</p>
+<!----------------------All Qustion area--------------------->
+		<p><div id="allquesarea" style="display:none;">
+			<div id="queshere" onclick="quesclick()">
+				Try once and trust us...
+			</div>
+			<button id="nButton" onclick="tryQues()">
+				Let's Try Once <i class="fas fa-drum"></i>
+			</button>
+		</div>
+		</p>
+</div>
+</body>
+<!------------------Main script------------------>
+
+<script type="text/javascript" src="magicscript.js"></script>
+</html>

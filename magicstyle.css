@@ -1,0 +1,443 @@
+		body
+		{
+			font-family:Rancho, arial, ubuntu;
+			background-image:linear-gradient(to right, #000000,#000000);
+		}
+/*---------------animations------------------------*/
+@keyframes visible2
+{
+	from{width:0px;opacity: 0;}
+	to{width:150px;opacity: 0.8;}
+}
+@keyframes visible
+{
+	from{width:0%;}
+	to{width:90%;}
+}
+@keyframes expand
+{
+	0%
+	{
+		width: 0%;
+	}
+	100% 
+	{
+		width:40%;
+	}
+}
+@keyframes rocket
+{
+	0%
+	{
+		padding-bottom: 0px;
+	}
+	50% 
+	{
+		padding-bottom:50px;
+	}
+	100% 
+	{
+		padding-bottom:0px;
+	}
+}
+@keyframes rotate
+{
+	0%
+	{
+		transform: rotate(0deg);margin:0px;transition: .5s;
+	}
+	100%
+	{
+		transform: rotate(360deg);margin:0px;transition: 0.5s;
+	}
+}
+@keyframes load
+{
+	0%{margin-right:200px;opacity:1;}
+	100%{margin-left:400px;opacity:0;}
+}
+#backlogo
+{
+	color:white;
+	position:fixed;
+	font-size:500px;
+	margin-left:50px;
+	margin-top:50px;
+	opacity: 0.1;
+}
+/*----------------First Section----------------------*/
+		.backball h3
+		{
+			color:white;
+			font-family:Rancho;
+			font-size:50px;
+			letter-spacing: 8px;
+			margin:0px;
+		}
+		.backball span
+		{
+			color:white;
+			font-family:arial;
+			font-size:16px;
+			letter-spacing: 4px;
+			margin:0px;
+			padding:0px;
+		}
+		.logoball
+		{
+			padding-top:50px;
+		}
+		.logoball i
+		{
+			font-size:250px;
+ 			background: -webkit-linear-gradient(#ff0000, #ffff00);
+ 			-webkit-background-clip: text;
+  			-webkit-text-fill-color:transparent;
+		}
+		.usericon i
+		{
+			color:black;
+			font-size: 35px;
+ 			background: -webkit-linear-gradient(#ff0000, #ffff00);
+ 			-webkit-background-clip: text;
+  			-webkit-text-fill-color:transparent;
+  			margin-top:50px;
+
+		}
+		.usericon input
+		{
+			color:white;
+			font-size: 30px;
+			background-color:inherit;
+			border:none;
+			width:40%;
+			border-bottom:3px solid #ffff00;
+			padding:5px;
+			text-align:center;
+			outline:none;
+			text-transform:capitalize;
+			animation:expand 1s linear 1;
+			
+
+		}
+		::placeholder
+		{
+			font-size:10px;
+			color:white;
+			font-family:arial;
+			letter-spacing:2px;
+		}
+
+		#nameButton
+		{
+			height:50px;
+			width:250px;
+			margin-top:25px;
+			font-size:30px;
+			font-weight: bold;
+			background-color:white;
+			border:none;
+			border-radius:5px;
+			outline:none;
+			cursor:pointer;
+			transition: 0.3s;
+			opacity:0.8;
+
+		}
+		#nameButton:hover
+		{
+			background-color:inherit;
+			color:white;
+  			border-left:3px solid #ff0000;
+  			border-right:3px solid #ff0000;
+		}
+/*----------------------second Section----------------*/
+		#branding h3
+		{
+			color:white;
+			font-family:Rancho;
+			font-size:30px;
+			letter-spacing: 8px;
+			margin:0px;
+		}
+		#branding span
+		{
+			color:white;
+			font-family:arial;
+			font-size:17px;
+			letter-spacing: 6px;
+			margin:0px;
+			padding:0px;
+		}
+		.logoball2
+		{
+			padding-top:10px;
+		}
+		.logoball2 i
+		{
+			font-size:150px;
+ 			background: -webkit-linear-gradient(#ff0000, #ffff00);
+ 			-webkit-background-clip: text;
+  			-webkit-text-fill-color:transparent;
+		}
+		.usericon2 i
+		{
+			color:black;
+			font-size: 35px;
+ 			background: -webkit-linear-gradient(#ff0000, #ffff00);
+ 			-webkit-background-clip: text;
+  			-webkit-text-fill-color:transparent;
+  			margin-left:10px;
+		}
+		.usericon2 input
+		{
+			color:white;
+			width:70%;
+			font-size: 25px;
+			background-color:inherit;
+			border:none;
+			border-bottom:3px solid #ffff00;
+			padding:5px;
+			text-align:center;
+			outline:none;
+			font-family:goldman;
+			text-transform:capitalize;
+
+		}
+		::placeholder
+		{
+			font-size:15px;
+			color:white;
+			font-family:arial;
+			letter-spacing:5px;
+		}
+
+		#qButton
+		{
+			height:50px;
+			width:150px;
+			margin-top:25px;
+			font-size:18px;
+			font-weight: bold;
+			background-color:white;
+			border:none;
+			border-radius:5px;
+			outline:none;
+			cursor:pointer;
+			transition: 0.3s;
+			margin:10px;
+			opacity:0.8;
+
+		}
+		#qButton:hover
+		{
+			background-color:inherit;
+			color:white;
+  			border-left:3px solid #ff0000;
+  			border-right:3px solid #ff0000;
+		}
+		#aButton
+		{
+			height:50px;
+			width:250px;
+			margin-top:25px;
+			font-family:goldman;
+			font-size:30px;
+			font-weight: 600;
+			background-color:white;
+			border:none;
+			border-radius:5px;
+			outline:none;
+			cursor:pointer;
+			transition: 0.3s;
+			opacity:0.8;
+
+		}
+		#aButton:hover
+		{
+			background-color:inherit;
+			color:white;
+  			border-left:3px solid #ff0000;
+  			border-right:3px solid #ff0000;
+		}
+		#nButton
+		{
+			height:50px;
+			width:250px;
+			margin-top:25px;
+			font-family:ubuntu;
+			font-size:20px;
+			font-weight: 600;
+			background-color:white;
+			border:none;
+			border-radius:5px;
+			outline:none;
+			cursor:pointer;
+			transition: 0.3s;
+			letter-spacing:2px;
+			opacity:0.8;
+
+		}
+		#nButton:hover
+		{
+			background-color:inherit;
+			color:white;
+  			border-left:3px solid #ff0000;
+  			border-right:3px solid #ff0000;
+		}
+.wel span, .qna
+{
+	color:white;
+	font-size:25px;
+	font-family:goldman;
+}
+#uname
+{
+	color:#ffff00;
+	font-size:45px;
+	font-family:goldman;
+	padding-bottom:10px;
+	letter-spacing: 3px;
+}
+#ansbox
+{
+	color:white;
+	font-size:20px;
+	font-weight:200;
+	letter-spacing: 3px;
+	padding:25px;
+}
+#reqbox
+{
+	color:white;
+	font-weight:200;
+	font-size:20px;
+	letter-spacing: 3px;
+	padding:25px;
+}
+#loadhead
+{
+	color:white;
+	font-size:55px;
+}
+#loading
+{
+	color:#ffff00;
+	font-size:30px;
+	opacity:0;
+	padding-top:50px;
+	margin-right:200px;
+	letter-spacing: 10px;
+	animation: load 2s linear 1;
+}
+		#loadbtn
+		{
+			height:50px;
+			width:150px;
+			margin:25px;
+			font-family:ubuntu;
+			font-size:25px;
+			font-weight: 400;
+			background-color:white;
+			border:none;
+			border-radius:5px;
+			outline:none;
+			cursor:pointer;
+			transition: 0.3s;
+			letter-spacing:2px;
+			opacity:0.8;
+			animation: visible2 2s linear 1;
+
+		}
+		#loadbtn:hover
+		{
+			background-color:inherit;
+			color:white;
+  			border-left:3px solid #fff;
+  			border-right:3px solid #fff;
+		}
+#username2
+{
+	color:white;
+	font-size:30px;
+	padding:0px;
+	margin-left:40px;
+	display: none;
+}
+		#exitButton
+		{
+			height:80px;
+			width:80px;
+			margin:25px;
+			margin-left:30px;
+			font-family:ubuntu;
+			font-size:35px;
+			font-weight: 600;
+			background-color:white;
+			border:none;
+			border-radius:50px;
+			outline:none;
+			cursor:pointer;
+			transition: 0.3s;
+			letter-spacing:2px;
+			opacity:0.8;
+
+		}
+		#exitButton:hover
+		{
+			background-color:inherit;
+			color:white;
+  			border-left:3px solid #ffff00;
+  			border-right:3px solid #ff0000;
+		}
+		#allques
+		{
+			height:50px;
+			width:100px;
+			margin:25px;
+			font-family:ubuntu;
+			font-size:30px;
+			font-weight: 600;
+			background-color:white;
+			border:none;
+			border-radius:5px;
+			outline:none;
+			cursor:pointer;
+			transition: 0.3s;
+			letter-spacing:2px;
+			opacity:0.8;
+
+		}
+		#allques:hover
+		{
+			background-color:inherit;
+			color:white;
+  			border-left:3px solid #ffff00;
+  			border-right:3px solid #ffff00;
+		}
+		#allquesbtn p button
+		{
+			height:auto;
+			width:90%;
+			margin:5px;
+			padding:5px;
+			font-family:quicksand;
+			font-size:20px;
+			font-weight: 400;
+			background-color:white;
+			border:none;
+			border-radius:5px;
+			outline:none;
+			cursor: pointer;
+			transition: 0.3s;
+			letter-spacing:2px;
+			animation: visible 2s linear 1;
+
+		}
+		#allquesbtn p button:hover
+		{
+			background-color:inherit;
+			color:white;
+  			border-left:3px solid #ffff00;
+  			border-right:3px solid #ffff00;
+		}
